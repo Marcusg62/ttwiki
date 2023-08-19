@@ -18,6 +18,7 @@ export default function Login() {
     }
     return error;
   }
+
   return (
     <Formik
       initialValues={{ email: "", pw: "" }}
@@ -56,6 +57,7 @@ export default function Login() {
               </FormControl>
             )}
           </Field>
+
           <Button
             mt={4}
             colorScheme="teal"
@@ -63,7 +65,7 @@ export default function Login() {
             type="button"
             w={"100%"}
           >
-            Submit
+            Login
           </Button>
         </Form>
       )}

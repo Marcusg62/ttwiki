@@ -2,10 +2,11 @@ import React from "react";
 import Image from "next/image";
 import logo from "../public/tt wiki.png";
 import Link from "next/link";
+import { Box } from "@chakra-ui/react";
 
 export default function Nav() {
   return (
-    <div className="drop-shadow-lg w-full bg-gray-100 p-4">
+    <Box boxShadow={"lg"} padding={"1rem"} backgroundColor={"gray.100"}>
       <Link href="/">
         <Image
           src={logo}
@@ -16,6 +17,6 @@ export default function Nav() {
           placeholder="blur" // Optional blur-up while loading
         />
       </Link>
-    </div>
+    </Box>
   );
 }
