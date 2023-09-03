@@ -3,11 +3,9 @@ import {
   Table,
   Thead,
   Tbody,
-  Tfoot,
   Tr,
   Th,
   Td,
-  TableCaption,
   TableContainer,
   Button,
   FormControl,
@@ -76,7 +74,7 @@ export default function HostList({ hosts }: { hosts: any[] }) {
                 >
                   <FormLabel htmlFor="password">Tiktok Username</FormLabel>
                   <InputGroup>
-                    <InputLeftAddon children="@" />
+                    <InputLeftAddon>@</InputLeftAddon>
                     <Field
                       as={Input}
                       id="ttUsername"
